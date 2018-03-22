@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.tc.c.pkmanager">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="可信安全中心" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+        <activity android:name=".ui.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AppSwitchActivity"
+            android:label="@string/title_activity_app_switch"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.APPPermissionsSettingActivity"
+            android:label="@string/title_activity_apppermissions_setting"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.APPHooksSettingActivity"
+            android:label="@string/title_activity_apppermissions_setting"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name=".xposed.XhookSettingsProvider"
+            android:authorities="com.app.tc.c.pkmanager.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

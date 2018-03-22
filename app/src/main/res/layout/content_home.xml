@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.tc.c.pkmanager.ui.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_320"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_receive_big"
+            style="@style/style_home_big_text_view"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/rank" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_main"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/button_harassment_interception"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_harassment_interception"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_harassment_interception" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_harassment_interception"
+                android:text="@string/str_harassment_interception" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_virus_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_virus_scan"
+                style="@style/style_home_bottom_image_view"
+                android:background="@drawable/ic_virus_scan" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_virus_scan"
+                android:text="@string/str_virus_scan" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_background"
+                style="@style/style_home_bottom_image_view"
+                android:background="@drawable/ic_background" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_background"
+                android:text="@string/str_background" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line11"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/button_permission"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_permission"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_permission" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_permission"
+                android:text="@string/str_permission" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_networknetwork"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_network"
+                style="@style/style_home_bottom_image_view"
+                android:background="@drawable/ic_nerwork" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_network"
+                android:text="@string/str_network" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_donate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_view"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_donate"
+                style="@style/style_home_bottom_image_view"
+                android:background="@drawable/ic_donate" />
+
+            <TextView
+                style="@style/style_home_bottom_text_view2"
+                android:layout_below="@id/iv_donate"
+                android:text="@string/donate" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

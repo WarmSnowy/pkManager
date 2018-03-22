@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:icon="@drawable/ic_harassment_interception"
+            android:title="@string/str_harassment_interception" />
+        <item
+            android:icon="@drawable/ic_virus_scan"
+            android:title="@string/str_virus_scan" />
+
+        <item
+            android:icon="@drawable/ic_background"
+            android:title="@string/str_background" />
+        <item
+            android:icon="@drawable/ic_permission"
+            android:title="@string/str_permission" />
+        <item
+            android:icon="@drawable/ic_nerwork"
+            android:title="@string/str_network" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_person_outline_24dp"
+            android:title="@string/str_about_me" />
+    </group>
+
+</menu>

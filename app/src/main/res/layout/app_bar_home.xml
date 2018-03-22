@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <!-- 设置顶部 layout_gravity="top"-->
+    <com.app.tc.c.pkmanager.ui.view.MyScrollView
+        android:id="@+id/msv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/content_home" />
+        </LinearLayout>
+    </com.app.tc.c.pkmanager.ui.view.MyScrollView>
+
+
+    <!-- 设置顶部 layout_gravity="top"-->
+    <include layout="@layout/layout_common_tool_bar" />
+
+
+</android.support.design.widget.CoordinatorLayout>

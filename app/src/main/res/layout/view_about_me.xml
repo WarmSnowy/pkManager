@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_12">
+
+    <TextView
+        style="@style/style_common_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_12"
+        android:text="@string/str_about_me_desc" />
+
+    <TextView
+        style="@style/style_common_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_12"
+        android:text="@string/str_about_me_qq" />
+
+    <TextView
+        style="@style/style_common_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_12"
+        android:text="@string/str_about_me_email" />
+
+    <TextView
+        android:id="@+id/tv_github"
+        style="@style/style_common_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_12"
+        android:text="@string/str_about_me_github" />
+</LinearLayout>
