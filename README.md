@@ -5,7 +5,7 @@
 一款基于Xposed框架开发的手机安全管理软件，目前实现的功能为权限管理。
 
 ## Issues 宝贵意见
-如果有任何问题，请到github的[issue处][21]写上你不明白的地方，也可以通过下面提供的方式联系我，我会及时给予解决。
+如果有任何问题，请到github的[issue处][1]写上你不明白的地方，也可以通过下面提供的方式联系我，我会及时给予解决。
 
 If you have any questions, please write to [the issue][1] of making you don't understand of place, also can contact me through here, I will help them in time.
 
@@ -17,7 +17,7 @@ If you have any questions, please write to [the issue][1] of making you don't un
 ## Thanks
  - 主要功能参考了小米的应用管家，不过目前只实现了一个权限管理功能，后续会慢慢补全。这里列出主要参考的内容。
  
- - UI界面：[KuaiChuan][6].用了它的主界面的大部分代码。图标来自[Ionic][13].
+ - UI界面：[KuaiChuan][2].用了它的主界面的大部分代码。图标来自[Ionic][3].
 
  - 参考项目：[XPrivacyLua][4].
 
